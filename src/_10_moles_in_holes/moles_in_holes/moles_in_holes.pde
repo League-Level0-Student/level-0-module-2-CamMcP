@@ -23,7 +23,11 @@ void setup() {
      background(78, 166, 51); // green grass
      fill(0, 0, 0);
      ellipse(200, 200, 100, 30); // holes!
+     drawMole(200, 200);
      ellipse(70, 119, 100, 30);
+     drawMole(70, 119);
      ellipse(300, 60, 100, 30);
+     drawMole(300, 60);
      ellipse(297, 350, 100, 30);
+     drawMole(297, 350);
 }

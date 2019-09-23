@@ -12,6 +12,7 @@ import java.applet.AudioClip;
 
 import javax.swing.JApplet;
 import javax.swing.JOptionPane;
+import javax.swing.plaf.basic.BasicInternalFrameTitlePane.IconifyAction;
 
 public class AnimalFarm {
 
@@ -19,10 +20,37 @@ public class AnimalFarm {
 		/*
 		 * 1. Ask the user which animal they want, then play the sound of that animal.
 		 */
-		
 		/* 2. Make it so that the user can keep entering new animals. */
-	}
+for (int i = 0; i < 5.0; i++) {
+	
 
+	String animal =	JOptionPane.showInputDialog("What animal do you want? Llama, cat, cow, duck, or dog? You have one chance for each animal, and there cannot be any capitals.");
+			if (animal.equals("llama")) {
+		playNoise(llamaFile);
+		}
+	
+	else if (animal.equals("cat")) {
+		playNoise(meowFile);
+		}
+	else if (animal.equals("cow")) {
+		playNoise(mooFile);
+	}
+	if (animal.equals("duck")) {
+		playNoise(quackFile);
+		}
+	if (animal.equals("dog")) {
+		playNoise(woofFile);
+		}
+	}
+	}
+	
+
+	
+	
+
+
+	
+	
 	void playMoo() {
 		playNoise(mooFile);
 	}
